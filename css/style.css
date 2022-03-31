@@ -15,7 +15,23 @@ div.row::after {
     display: table;
     clear: both;
 }
+h1 {
+    font-size: 80px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
 
+/* regole generali bottoni */
+a.btn {
+    padding: 5px 20px;
+    color: #000;
+    text-decoration: none;
+}
+/* bottone blu */
+.btn.blue {
+    color: #fff;
+    background-color: #0161ff;
+}
 /* stile header */
 header {
     position: fixed;
@@ -55,6 +71,7 @@ header {
 /* nav right */
 .nav.dx {
     float: right;
+    margin-right: 30px;
 }
 .nav.dx ul li {
     display: inline-block;
@@ -62,15 +79,41 @@ header {
 .row #accedi {
     float: right;
 }
-/* regole generali bottoni */
-a.btn {
-    padding: 5px 20px;
-    color: #000;
-    text-decoration: none;
-}
-/* bottone blu */
-.btn#blue {
-    color: #fff;
-    background-color: #0161ff;
-}
 /* end header */
+
+/* jumbotron */
+#jumbotron-section {
+    padding-top: 80px;
+    background-color: #b4d0e7;
+}
+.container.jumbotron {
+    width: 85%;
+}
+
+.row .text.jumbo, #label-jumbo {
+    float: left;
+    /* debug */
+    background-color: red;
+    border: 1px solid black;
+    height: 300px;
+}
+.text.jumbo {
+    width: 30%;
+}
+.text.jumbo p {
+    margin-bottom: 30px;
+}
+.text.jumbo #annulla-iscrizione {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+.text.jumbo i {
+    font-size: 50px;
+    color: #000;
+    margin-top: 40px;
+}
+#label-jumbo {
+    width: 70%;
+}
