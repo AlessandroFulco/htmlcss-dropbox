@@ -15,10 +15,11 @@ div.row::after {
     display: table;
     clear: both;
 }
-h1 {
-    font-size: 90px;
-    margin-top: 60px;
-    margin-bottom: 40px;
+h2 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 30px;
 }
 
 /* regole generali bottoni */
@@ -92,7 +93,11 @@ header {
 .container.jumbotron {
     width: 85%;
 }
-
+#title {
+    font-size: 90px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
 .row .text.jumbo, #label-jumbo {
     float: left;
 }
@@ -107,7 +112,7 @@ header {
     padding: 10px 20px;
 }
 .text.jumbo #annulla-iscrizione {
-    margin-top: 20px;
+    margin-top: 30px;
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -133,11 +138,9 @@ main {
 .container.plan-partner-tutorial {
     width: 75%;
         /* debug */
-    background-color: red;
-    height: 800px;
+        padding-bottom: 100px;
 }
 .container.plan-partner-tutorial h2 {
-    font-size: 50px;
     margin-bottom: 80px;
 }
 #sub-title-plan {
@@ -156,17 +159,42 @@ main {
 .circle.active-circle {
     border: 6px solid #0061ff;
 }
-.type-plan {
+.billing-plan {
     vertical-align: middle;
     font-size: 18px;
     margin-right: 20px;
 }
+/* box plan */
 .box-plan {
     float: left;
     width: calc((100% - 160px) / 3);
-    background-color: blue;
 }
+.row.plan .container.description-plan .price {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+}
+.row.plan .container.description-plan .condition-plan {
+    color: #888;
+}
+/* plan professional */
+.box-plan.professional {
+    border: 1px solid #bbb;
+}
+.box-plan.professional .type-plan-box {
+    border-bottom: 1px solid #bbb;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.container.description-plan {
+    width: 90%;
+    padding-top: 30px;
+}
+/* plan standard */
 .box-plan.standard {
     margin: 0 80px 0 80px;
 }
+
+/* plan advanced */
 
