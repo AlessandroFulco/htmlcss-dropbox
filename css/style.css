@@ -4,12 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 .container {
     margin: 0 auto;
-}
-.container.header {
-    width: calc(100% - 20px);
-    margin: 0 10px 0 10px;
 }
 div.row::after {
     content: "";
@@ -23,15 +22,55 @@ header {
     width: 100%;
     height: 80px;
     line-height: 80px;
-    /* debug */
-    background-color: red;
-}
-#logo {
-    float: left;
-}
-#logo img {
-    vertical-align: middle;
-}
-.nav.sx {
 
 }
+.container.header {
+    width: calc(100% - 40px);
+    margin: 0 20px 0 20px;
+}
+
+/* stile logo */
+#logo, .sx {
+    float: left;
+}
+#logo img  {
+    vertical-align: middle;
+}
+
+/* stile nav */
+.nav a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+}
+/* nav left */
+.nav.sx ul {
+    margin-left: 40px;
+}
+.nav.sx ul li {
+    display: inline-block;
+}
+
+/* nav right */
+.nav.dx {
+    float: right;
+}
+.nav.dx ul li {
+    display: inline-block;
+}
+.row #accedi {
+    float: right;
+}
+/* regole generali bottoni */
+a.btn {
+    padding: 5px 20px;
+    color: #000;
+    text-decoration: none;
+}
+/* bottone blu */
+.btn#blue {
+    color: #fff;
+    background-color: #0161ff;
+}
+/* end header */
