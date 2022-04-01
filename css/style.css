@@ -327,8 +327,20 @@ main {
 .logo-carousel{
     width: 20%;
 }
+.box-logo-carousel {
+    width: 50%;
+    background-color: red;
+    float: left;
+    text-align: center;
+}
+.box-logo-carousel::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .logo-carousel img {
     max-width: 50%;
-    height: auto;
+}
+.scale-down {
     object-fit: scale-down;
 }
