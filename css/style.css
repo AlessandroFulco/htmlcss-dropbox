@@ -143,8 +143,6 @@ main {
 /* sezione plan */
 .container.plan-partner-tutorial {
     width: 75%;
-        /* debug */
-        padding-bottom: 100px;
 }
 .container.plan-partner-tutorial h2 {
     margin-bottom: 80px;
@@ -235,7 +233,7 @@ main {
 .box-plan.enterprise {
     width: 100%;
     float: none;
-    height: auto;
+    min-height: auto;
     margin: 50px 0;
 }
 .container.enterprise-section {
@@ -322,25 +320,52 @@ main {
 }
 .carousel {
     width: 100%;
-    margin-bottom: 150px;
 }
-.logo-carousel{
-    width: 20%;
-}
-.box-logo-carousel {
-    width: 50%;
-    background-color: red;
+.carousel aside .row img {
     float: left;
+    width: 50%;
     text-align: center;
 }
-.box-logo-carousel::after {
-    content: "";
-    display: table;
-    clear: both;
+.carousel .row aside, .carousel .row section {
+    float: left;
 }
-.logo-carousel img {
-    max-width: 50%;
+.carousel aside {
+    width: 25%;
+    height: 100%;
+    background-color: blueviolet;
 }
-.scale-down {
-    object-fit: scale-down;
+
+.carousel section {
+    width: 50%;
+    background-color: red;
 }
+/* end sez carousel */
+
+/* sez prova gratuita */
+#prova-gratuita {
+    width: 100%;
+    padding: 150px 0;
+    background-color: #b4d0e7;
+        /* debug */
+        height
+        
+}
+.call-to-action {
+    width: 50%;
+}
+.call-to-action.lead {
+    float: left;
+}
+.call-to-action.lead h2 {
+    margin-bottom: 0;
+    color: #61082b;
+}
+.call-to-action.link {
+    float: right;
+    text-align: right;
+}
+.call-to-action.link .btn.white {
+    background-color: #fff;
+    padding: 7px 55px;
+}
+
