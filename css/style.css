@@ -175,7 +175,7 @@ main {
     float: left;
     width: calc((100% - 160px) / 3);
     border: 1px solid #bbb;
-    height: 1300px;
+    min-height: 1300px;
 }
 .row.plan .container.description-plan .price {
     font-weight: bold;
@@ -307,4 +307,39 @@ main {
 }
 #tutorial p > span {
     text-decoration: underline;
+}
+/* end sez tutorial */
+
+/* stile sez carousel */
+.container.title-carousel {
+    width: 75%;
+    margin-bottom: 80px;
+}
+.container.title-carousel a {
+    margin-top: 40px;
+    font-size: 20px;
+    display: inline-block;
+}
+.carousel {
+    width: 100%;
+    margin-bottom: 150px;
+}
+.logo-carousel{
+    width: 20%;
+}
+.logo-carousel .row {
+    width: 100%;
+}
+.box-logo-carousel {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.box-logo-carousel::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo-carousel img {
+    max-width: 50%;
 }
