@@ -261,6 +261,9 @@ main {
 /* end section plan */
 
 /* stile sez partner */
+#partner {
+    margin-top: 150px;
+}
 #partner .box {
     float: left;
     width: 50%;
@@ -268,7 +271,7 @@ main {
 #partner .box.partner-label img {
     width: 100%;
 }
-.box.box.partner-text {
+.box.partner-text {
     padding: 50px 0 0 50px;
     font-weight: 500;
 }
@@ -281,4 +284,27 @@ main {
     border: 1px solid black;
     font-weight: 500;
     padding: 10px 20px;
+}
+/* end sez partner */
+
+/* stile sez tutorial */
+#tutorial {
+    margin-top: 150px;
+}
+#tutorial .box-tutorial {
+    width: calc((100% - 140px) / 3);
+    float: left;
+}
+#tutorial .row {
+    margin: 150px 0;
+}
+#tutorial .box-tutorial.center {
+    margin: 0 70px;
+}
+.box-tutorial img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+#tutorial p > span {
+    text-decoration: underline;
 }
