@@ -21,16 +21,20 @@ h2 {
 h3 {
     font-size: 30px;
 }
-
+h4 {
+    font-size: 20px;
+}
 /* regole generali bottoni */
 a.btn {
     padding: 5px 20px;
     color: #000;
     text-decoration: none;
+    display: inline-block;
 }
 /* bottone blu */
 .btn.blue {
     color: #fff;
+    padding: 10px 20px;
     background-color: #0161ff;
 }
 /* stile header */
@@ -81,6 +85,10 @@ header {
 .row #accedi {
     float: right;
 }
+#accedi .btn.blue.header {
+    vertical-align: middle;
+    line-height: 20px;
+}
 /* end header */
 
 /* jumbotron */
@@ -108,9 +116,7 @@ header {
     margin-bottom: 50px;
     font-size: 18px;
 }
-.btn.blue.jumbo {
-    padding: 10px 20px;
-}
+
 .text.jumbo #annulla-iscrizione {
     margin-top: 30px;
     display: inline-block;
@@ -168,6 +174,8 @@ main {
 .box-plan {
     float: left;
     width: calc((100% - 160px) / 3);
+    border: 1px solid #bbb;
+    height: 1300px;
 }
 .row.plan .container.description-plan .price {
     font-weight: bold;
@@ -177,24 +185,76 @@ main {
 .row.plan .container.description-plan .condition-plan {
     color: #888;
 }
-/* plan professional */
-.box-plan.professional {
-    border: 1px solid #bbb;
+.container.description-plan {
+    width: 85%;
+    padding-top: 30px;
 }
-.box-plan.professional .type-plan-box {
+.box-plan .type-plan-box {
     border-bottom: 1px solid #bbb;
     text-align: center;
     padding: 20px 0;
     font-size: 20px;
 }
-.container.description-plan {
-    width: 90%;
-    padding-top: 30px;
+.container.description-plan .btn.blue.plan {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+.container.description-plan .condition-plan {
+    margin-bottom: 70px;
+}
+.container.description-plan .offer-plan p {
+    margin: 25px 0;
+}
+.container.description-plan span {
+  display: block;
+  margin-bottom: 40px;  
+}
+.container.description-plan span a {
+    text-decoration:  none;
+}
+.container.description-plan hr {
+    width: 60px;
+    color: #bbb;
+}
+.container.description-plan .highlights-plan {
+    margin-top: 40px;
+}
+.highlights-plan p {
+    margin: 30px 0;
+}
+.highlights-plan p i {
+    color: #0765ff;
 }
 /* plan standard */
 .box-plan.standard {
     margin: 0 80px 0 80px;
 }
 
-/* plan advanced */
+/* row enterprise */
+.box-plan.enterprise {
+    width: 100%;
+    float: none;
+    height: auto;
+    margin: 50px 0;
+}
+.container.enterprise-section {
+    width: 96%;
+}
+.box-plan.enterprise .enterprise-caption, .enterprise-contact {
+    float: left;
+}
+.enterprise-caption {
+    width: 70%;
+}
+.enterprise-contact {
+    width: 30%;
+}
 
+.box-plan.enterprise .enterprise-caption h3, h4, p, .enterprise-contact .btn.blue {
+    margin: 40px 0;
+}
+.box-plan.enterprise .enterprise-contact .btn.blue{
+    text-align: center;
+    width: 100%;
+}
