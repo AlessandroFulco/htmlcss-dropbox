@@ -477,3 +477,12 @@ footer ul li a {
     color: #fff;
     padding: 5px 0px;
 }
+footer hr {
+    width: 150px;
+    margin-top: 100px;
+    margin: 100px 0 50px 0;
+}
+footer #language {
+    color: #fff;
+    line-height: 22px;
+}
