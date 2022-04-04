@@ -451,3 +451,29 @@ main {
     border-bottom: 1px solid #bbb;
 }
 /* end sez faq */
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #000;
+    padding-bottom: 100px;
+}
+footer .container.footer {
+    width: 88%;
+}footer .container.footer section {
+    float: left;
+    width: calc(100% / 5);
+}
+footer section h4 {
+    margin: 100px 0 20px 0;
+    color: #fff;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0px;
+}
